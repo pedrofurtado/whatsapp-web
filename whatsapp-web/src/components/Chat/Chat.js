@@ -25,7 +25,7 @@ class Chat extends Component {
           </div>
         </div>
         {this.props.messages.map(message => (
-          <div className="row message-body">
+          <div key={message.sentAt} className="row message-body">
             <div className="col-sm-12 message-main-sender">
               <div className="sender">
                 <div className="message-text">

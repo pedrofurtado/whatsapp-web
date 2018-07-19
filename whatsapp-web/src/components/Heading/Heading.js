@@ -15,8 +15,8 @@ class Heading extends Component {
                 </a>
                 <span className="heading-online">Online</span>
             </div>
-            <div className="col-sm-1 col-xs-1  heading-dot pull-right">
-                <i className="fa fa-ellipsis-v fa-2x  pull-right" aria-hidden="true"></i>
+            <div className="col-sm-1 col-xs-1 heading-dot pull-right">
+                <i className="fa fa-ellipsis-v pull-right" aria-hidden="true"></i>
             </div>
         </div>
     );

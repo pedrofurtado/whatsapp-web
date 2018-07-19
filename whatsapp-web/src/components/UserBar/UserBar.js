@@ -10,11 +10,11 @@ class UserBar extends Component {
                 <img src="http://shurl.esy.es/y" alt="qwe" />
             </div>
             </div>
-            <div className="col-sm-1 col-xs-1  heading-dot  pull-right">
-            <i className="fa fa-ellipsis-v fa-2x  pull-right" aria-hidden="true"></i>
+            <div className="col-sm-1 col-xs-1 heading-dot pull-right">
+            <i className="fa fa-ellipsis-v pull-right" aria-hidden="true"></i>
             </div>
             <div className="col-sm-2 col-xs-2 heading-compose  pull-right">
-            <i className="fa fa-comments fa-2x  pull-right" aria-hidden="true"></i>
+            <i className="fa fa-comments pull-right" aria-hidden="true"></i>
             </div>
         </div>
     );

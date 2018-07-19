@@ -6,9 +6,11 @@ import SideBar from './components/SideBar/SideBar';
 class App extends Component {
   render() {
     return (
-      <div className="row app-one">
-        <SideBar/>
-        <Conversation />
+      <div className='App container'>
+        <div className='App__row row'>
+          <SideBar/>
+          <Conversation/>
+        </div>
       </div>
     );
   }

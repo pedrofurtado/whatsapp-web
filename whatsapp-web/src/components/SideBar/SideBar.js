@@ -3,29 +3,19 @@ import './SideBar.css';
 import ConversationsArchive from '../ConversationsArchive/ConversationsArchive';
 import UserBar from '../UserBar/UserBar';
 import SearchBox from '../SearchBox/SearchBox';
+import OverlapHeading from '../OverlapHeading/OverlapHeading';
 
 class SideBar extends Component {
   render() {
     return (
-        <div className="col-sm-4 side">
-            <div className="side-one">
+        <div className="SideBar col-sm-4">
+            <div className="SideBar__first">
                 <UserBar/>
                 <SearchBox/>
                 <ConversationsArchive/>
             </div>
-            <div className="side-two">
-                {/* Heading */}
-                <div className="row newMessage-heading">
-                    <div className="row newMessage-main">
-                        <div className="col-sm-2 col-xs-2 newMessage-back">
-                            <i className="fa fa-arrow-left" aria-hidden="true"></i>
-                        </div>
-                        <div className="col-sm-10 col-xs-10 newMessage-title">
-                            New Chat11
-                        </div>
-                    </div>
-                </div>
-                {/* Heading End */}
+            <div className="SideBar__second">
+                <OverlapHeading/>
                 <SearchBox/>
                 <ConversationsArchive />
             </div>
