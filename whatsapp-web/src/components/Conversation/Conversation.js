@@ -17,7 +17,7 @@ class Conversation extends Component {
 
   render() {
     return (
-      <div className="col-sm-8 conversation">
+      <div className="Conversation col-sm-8">
         <Heading/>  
         <Chat messages={this.state.messages} />
         <ReplyBar onReply={this.handleReply} />
