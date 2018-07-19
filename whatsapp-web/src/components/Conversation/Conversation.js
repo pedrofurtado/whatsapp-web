@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Conversation.css';
 import Chat from '../Chat/Chat';
 import ReplyBar from '../ReplyBar/ReplyBar';
-import Heading from '../Heading/Heading';
+import ConversationHeading from '../ConversationHeading/ConversationHeading';
 
 class Conversation extends Component {
   state = { 
@@ -18,7 +18,7 @@ class Conversation extends Component {
   render() {
     return (
       <div className="Conversation col-sm-8">
-        <Heading/>  
+        <ConversationHeading/>  
         <Chat messages={this.state.messages} />
         <ReplyBar onReply={this.handleReply} />
       </div>

@@ -1,0 +1,21 @@
+.Heading__compose {
+    padding: 0;
+}
+
+.Heading__compose i {
+    text-align: center;
+    padding: 5px;
+    color: #93918f;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .Heading__compose {
+        padding: 5px !important;
+    }
+   
+    .Heading__compose i {
+        color: #fff;
+        cursor: pointer;
+    }
+}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './SideBar.css';
 import ConversationsArchive from '../ConversationsArchive/ConversationsArchive';
-import UserBar from '../UserBar/UserBar';
+import SideBarHeading from '../SideBarHeading/SideBarHeading';
 import SearchBox from '../SearchBox/SearchBox';
 import OverlapHeading from '../OverlapHeading/OverlapHeading';
 
@@ -10,7 +10,7 @@ class SideBar extends Component {
     return (
         <div className="SideBar col-sm-4">
             <div className="SideBar__first">
-                <UserBar/>
+                <SideBarHeading/>
                 <SearchBox/>
                 <ConversationsArchive/>
             </div>

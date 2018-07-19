@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './UserBar.css';
-// Usar composicao para o Heading, SideBarHeading (UserBar) and ConversationHeading (Heading)
+import './SideBarHeading.css';
+import Heading from '../Heading/Heading';
 
-class UserBar extends Component {
+class SideBarHeading extends Component {
   render() {
     return (
-        <div className="Heading row">
+        <Heading>
             <div className="Heading__avatar col-sm-3 col-xs-3">
                 <div className="Heading__avatar-icon">
                     <img src="http://shurl.esy.es/y" alt="qwe" />
@@ -17,9 +17,9 @@ class UserBar extends Component {
             <div className="Heading__compose col-sm-2 col-xs-2 pull-right">
                 <i className="fa fa-comments pull-right" aria-hidden="true"></i>
             </div>
-        </div>
+        </Heading>
     );
   }
 }
 
-export default UserBar;
+export default SideBarHeading;
