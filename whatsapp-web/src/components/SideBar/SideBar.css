@@ -27,3 +27,7 @@
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
 }
+
+.SideBar--second-active .SideBar__second {
+  left: 0 !important;
+}

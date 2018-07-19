@@ -38,10 +38,12 @@ class ReplyBar extends Component {
       return;
     }
 
-    this.props.onReply({
-      text: this.state.text,
-      sentAt: Date.now()
-    });
+    if(this.props.hasOwnProperty('onReply') && typeof(this.props.onReply) === 'function') {
+      this.props.onReply({
+        text: this.state.text,
+        sentAt: Date.now()
+      });
+    }
 
     this.setState({ text: '' });
   }
