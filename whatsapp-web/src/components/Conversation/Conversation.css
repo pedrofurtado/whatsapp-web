@@ -1,12 +1,8 @@
-/*Conversation*/
-
 .conversation {
   padding: 0 !important;
   margin: 0 !important;
   height: 100%;
-  /*width: 100%;*/
   border-left: 1px solid rgba(0, 0, 0, .08);
-  /*overflow-y: auto;*/
   }
   
   .message {
@@ -18,23 +14,25 @@
   border: 1px solid #f7f7f7;
   height: calc(100% - 120px);
   }
-  .message-previous {
+
+.message-previous {
   margin : 0 !important;
   padding: 0 !important;
   height: auto;
   width: 100%;
-  }
-  .previous {
+}
+  
+.previous {
   font-size: 15px;
   text-align: center;
   padding: 10px !important;
   cursor: pointer;
-  }
+}
   
-  .previous a {
+.previous a {
   text-decoration: none;
   font-weight: 700;
-  }
+}
   
   .message-body {
   margin: 0 !important;
@@ -44,7 +42,6 @@
   }
   
   .message-main-receiver {
-  /*padding: 10px 20px;*/
   max-width: 60%;
   }
   
@@ -68,8 +65,7 @@
   margin-left: 50px !important;
   font-size: 12px;
   text-align: right;
-  color: #9a9a9a;
-  
+  color: #9a9a9a;  
   }
   
   .receiver {
@@ -93,51 +89,16 @@
   display: inline-block;
   word-wrap: break-word;
   }
-  
 
 @media screen and (max-width: 700px) {
-/*Conversation*/
-.conversation {
+  .conversation {
     padding: 0 !important;
     margin: 0 !important;
     height: 100%;
-    /*width: 100%;*/
     border-left: 1px solid rgba(0, 0, 0, .08);
-    /*overflow-y: auto;*/
   }
+  
   .message {
     height: calc(100% - 140px);
   }
-  .reply {
-    height: 70px;
-  }
-  .reply-emojis {
-    padding: 5px 0 !important;
-  }
-  .reply-emojis i {
-    padding: 5px 2px !important;
-    font-size: 1.8em !important;
-  }
-  .reply-main {
-    padding: 2px 8px !important;
-  }
-  .reply-main textarea {
-    padding: 8px !important;
-    font-size: 18px;
-  }
-  .reply-recording {
-    padding: 5px 0 !important;
-  }
-  .reply-recording i {
-    padding: 5px 0 !important;
-    font-size: 1.8em !important;
-  }
-  .reply-send {
-    padding: 5px 0 !important;
-  }
-  .reply-send i {
-    padding: 5px 2px 5px 0 !important;
-    font-size: 1.8em !important;
-  }
-
 }

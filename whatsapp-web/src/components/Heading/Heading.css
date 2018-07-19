@@ -1,0 +1,101 @@
+.Heading {
+    padding: 10px 16px 10px 15px;
+    margin: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #eee;
+    z-index: 1000;
+}
+
+.Heading__avatar {
+    padding: 0;
+    cursor: pointer;
+}
+
+.Heading__avatar-icon img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.Heading__name {
+    padding: 0 !important;
+    cursor: pointer;
+}
+
+.Heading__name-meta {
+    font-weight: 700;
+    font-size: 100%;
+    padding: 5px;
+    padding-bottom: 0;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #000;
+    display: block;
+}
+
+.Heading__online {
+    display: none;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #93918f;
+}
+
+.Heading__compose {
+    padding: 0;
+}
+
+.Heading__compose i {
+    text-align: center;
+    padding: 5px;
+    color: #93918f;
+    cursor: pointer;
+}
+
+.Heading__dot {
+    padding: 0;
+    margin-left: 10px;
+}
+
+.Heading__dot i {
+    text-align: right;
+    padding: 5px;
+    color: #93918f;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .Heading {
+        height: 70px;
+        background-color: #009688;
+    }
+
+    .Heading__avatar {
+        padding: 0 !important;
+    }
+
+    .Heading__avatar-icon img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .Heading__compose {
+        padding: 5px !important;
+    }
+   
+    .Heading__compose i {
+        color: #fff;
+        cursor: pointer;
+    }
+   
+    .Heading__dot {
+        padding: 5px !important;
+        margin-left: 10px !important;
+    }
+   
+    .Heading__dot i {
+        color: #fff;
+        cursor: pointer;
+    }
+}

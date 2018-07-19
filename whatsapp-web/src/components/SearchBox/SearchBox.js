@@ -4,10 +4,10 @@ import './SearchBox.css';
 class SearchBox extends Component {
   render() {
     return (
-        <div className="row searchBox">
-            <div className="col-sm-12 searchBox-inner">
+        <div className="SearchBox row">
+            <div className="SearchBox__inner col-sm-12">
                 <div className="form-group has-feedback">
-                    <input id="searchText" type="text" className="form-control" name="searchText" placeholder="Search" />
+                    <input type="text" className="form-control" />
                     <span className="glyphicon glyphicon-search form-control-feedback"></span>
                 </div>
             </div>

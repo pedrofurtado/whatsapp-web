@@ -8,18 +8,18 @@ class ReplyBar extends Component {
 
   render() {
     return (
-      <div className="ReplyBar row reply">
+      <div className="ReplyBar row">
         <form onSubmit={(e) => this.handleSubmit(e)}>
-          <div className="col-sm-1 col-xs-1 reply-emojis">
+          <div className="col-sm-1 col-xs-1 ReplyBar__emojis">
             <i className="fa fa-smile-o"></i>
           </div>
-          <div className="col-sm-9 col-xs-9 reply-main">
+          <div className="col-sm-9 col-xs-9 ReplyBar__main">
             <input id="comment" className="form-control" onChange={(e) => this.handleChange(e)} value={this.state.text} />
           </div>
-          <div className="col-sm-1 col-xs-1 reply-recording">
+          <div className="col-sm-1 col-xs-1 ReplyBar__recording">
             <i className="fa fa-microphone" aria-hidden="true"></i>
           </div>
-          <div className="col-sm-1 col-xs-1 reply-send">
+          <div className="col-sm-1 col-xs-1 ReplyBar__send">
             <button><i className="fa fa-send" aria-hidden="true"></i></button>
           </div>
         </form>
