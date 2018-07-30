@@ -1,23 +1,22 @@
 .Heading__name {
-    padding: 0 !important;
-    cursor: pointer;
+  padding: 0 !important;
+  cursor: pointer;
 }
 
 .Heading__name-meta {
-    font-weight: 700;
-    font-size: 100%;
-    padding: 5px;
-    padding-bottom: 0;
-    text-align: left;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: #000;
-    display: block;
+  font-weight: 700;
+  font-size: 100%;
+  padding: 5px;
+  padding-bottom: 0;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #000;
+  display: block;
 }
 
 .Heading__online {
-    display: none;
-    padding: 0 5px;
-    font-size: 12px;
-    color: #93918f;
+  padding: 0 5px;
+  font-size: 12px;
+  color: #93918f;
 }

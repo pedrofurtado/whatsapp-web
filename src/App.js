@@ -11,8 +11,8 @@ class App extends Component {
     return (
       <div className='App container'>
         <div className='App__row row'>
-          <SideBar/>
-          <Conversation/>
+          <SideBar />
+          <Conversation />
         </div>
       </div>
     );

@@ -1,90 +1,17 @@
 .Chat {
-    padding: 0 !important;
-    margin: 0 !important;
-    background: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png") no-repeat fixed center;
-    background-size: cover;
-    overflow-y: auto;
-    border: 1px solid #f7f7f7;
-    height: calc(100% - 120px);
-}
-
-.Chat__previous {
-    margin : 0 !important;
-    padding: 0 !important;
-    height: auto;
-    width: 100%;
-}
-
-.Chat--previous {
-    font-size: 15px;
-    text-align: center;
-    padding: 10px !important;
-    cursor: pointer;
-}
-
-.Chat--previous a {
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.Chat__body {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: auto;
-    height: auto;
-}
-
-.Chat__main-receiver {
-    max-width: 60%;
-}
-
-.Chat__main-sender {
-    padding: 3px 20px !important;
-    margin-left: 40% !important;
-    max-width: 60%;
-}
-
-.Chat__text {
-    margin: 0 !important;
-    padding: 5px !important;
-    word-wrap:break-word;
-    font-weight: 200;
-    font-size: 14px;
-    padding-bottom: 0 !important;
-}
-
-.Chat__time {
-    margin: 0 !important;
-    margin-left: 50px !important;
-    font-size: 12px;
-    text-align: righ    t;
-color: #9a9a9a;  
-}
-
-.Chat__receiver {
-    width: auto !important;
-    padding: 4px 10px 7px !important;
-    border-radius: 10px 10px 10px 0;
-    background: #ffffff;
-    font-size: 12px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-    word-wrap: break-word;
-    display: inline-block;
-}
-
-.Chat__sender {
-    width: auto !important;
-    background: #dcf8c6;
-    border-radius: 10px 10px 0 10px;
-    padding: 4px 10px 7px !important;
-    font-size: 12px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-    display: inline-block;
-    word-wrap: break-word;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-y: auto;
+  border: 1px solid #f7f7f7;
+  height: calc(100% - 120px);
 }
 
 @media screen and (max-width: 700px) {
-    .Chat {
-        height: calc(100% - 140px);
-    }
+  .Chat {
+    height: calc(100% - 140px);
+  }
 }
