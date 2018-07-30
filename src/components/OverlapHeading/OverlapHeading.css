@@ -1,43 +1,35 @@
 .OverlapHeading {
-    padding: 0 !important;
-    margin: 0 !important;
-    height: 100%;
-    position: relative;
-    left: -100%;
+  padding: 10px 16px 10px 15px !important;
+  margin: 0 !important;
+  height: 100px;
+  width: 100%;
+  background-color: #00bfa5;
+  z-index: 1001;
 }
 
 .OverlapHeading__heading {
-    padding: 10px 16px 10px 15px !important;
-    margin: 0 !important;
-    height: 100px;
-    width: 100%;
-    background-color: #00bfa5;
-    z-index: 1001;
+  padding: 10px 16px 0 15px !important;
+  margin: 0 !important;
+  height: 60px;
+  margin-top: 30px !important;
+  width: 100%;
+  z-index: 1001;
+  color: #fff;
 }
 
-.OverlapHeading__main {
-    padding: 10px 16px 0 15px !important;
-    margin: 0 !important;
-    height: 60px;
-    margin-top: 30px !important;
-    width: 100%;
-    z-index: 1001;
-    color: #fff;
+.OverlapHeading__heading__title {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 5px !important;
 }
 
-.OverlapHeading__title {
-    font-size: 18px;
-    font-weight: 700;
-    padding: 10px 5px !important;
+.OverlapHeading__heading__backButton {
+  text-align: center;
+  padding: 12px 5px !important;
+  display: block;
+  cursor: pointer;
 }
 
-.OverlapHeading__back {
-    text-align: center;
-    padding: 12px 5px !important;
-    display: block;
-    cursor: pointer;
-}
-
-.OverlapHeading__back i {
-    margin: auto !important;
+.OverlapHeading__heading__backButton i {
+  margin: auto !important;
 }

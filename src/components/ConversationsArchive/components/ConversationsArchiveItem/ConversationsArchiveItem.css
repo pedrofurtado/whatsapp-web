@@ -16,26 +16,26 @@
   padding: 0 !important;
 }
 
-.ConversationsArchiveItem__avatar-icon img {
+.ConversationsArchiveItem__avatar__icon img {
   border-radius: 50%;
   height: 49px;
   width: 49px;
 }
 
-.ConversationsArchiveItem__main {
+.ConversationsArchiveItem__info {
   padding: 0 !important;
 }
 
-.ConversationsArchiveItem__main .row {
+.ConversationsArchiveItem__info .row {
   padding: 0 !important;
   margin: 0 !important;
 }
 
-.ConversationsArchiveItem__name {
+.ConversationsArchiveItem__info__name {
   padding: 10px !important;
 }
 
-.ConversationsArchiveItem__name-meta {
+.ConversationsArchiveItem__info__name__meta {
   font-size: 100%;
   padding: 1% !important;
   text-align: left;
@@ -44,11 +44,11 @@
   color: #000;
 }
 
-.ConversationsArchiveItem__time {
+.ConversationsArchiveItem__info__time {
   padding: 10px !important;
 }
 
-.ConversationsArchiveItem__time-meta {
+.ConversationsArchiveItem__info__time__meta {
   text-align: right;
   font-size: 12px;
   padding: 1% !important;
@@ -66,34 +66,34 @@
     padding: 0 8px !important;
   }
 
-  .ConversationsArchiveItem__avatar-icon img {
+  .ConversationsArchiveItem__avatar__icon img {
     height: 55px;
     width: 55px;
   }
 
-  .ConversationsArchiveItem__main {
+  .ConversationsArchiveItem__info {
     padding: 0 !important;
   }
 
-  .ConversationsArchiveItem__main .row {
+  .ConversationsArchiveItem__info .row {
     padding: 0 !important;
     margin: 0 !important;
   }
 
-  .ConversationsArchiveItem__name {
+  .ConversationsArchiveItem__info__name {
     padding: 10px 5px !important;
   }
 
-  .ConversationsArchiveItem__name-meta {
+  .ConversationsArchiveItem__info__name__meta {
     font-size: 16px;
     padding: 5% !important;
   }
 
-  .ConversationsArchiveItem__time {
+  .ConversationsArchiveItem__info__time {
     padding: 10px !important;
   }
 
-  .ConversationsArchiveItem__time-meta {
+  .ConversationsArchiveItem__info__time__meta {
     text-align: right;
     font-size: 14px;
     padding: 4% !important;

@@ -1,57 +1,15 @@
 .Heading {
-    padding: 10px 16px 10px 15px;
-    margin: 0;
-    height: 60px;
-    width: 100%;
-    background-color: #eee;
-    z-index: 1000;
-}
-
-.Heading__avatar {
-    padding: 0;
-    cursor: pointer;
-}
-
-.Heading__avatar-icon img {
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-}
-
-.Heading__dot {
-    padding: 0;
-    margin-left: 10px;
-}
-
-.Heading__dot i {
-    text-align: right;
-    padding: 5px;
-    color: #93918f;
-    cursor: pointer;
+  padding: 10px 16px 10px 15px;
+  margin: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #eee;
+  z-index: 1000;
 }
 
 @media screen and (max-width: 700px) {
-    .Heading {
-        height: 70px;
-        background-color: #009688;
-    }
-
-    .Heading__avatar {
-        padding: 0 !important;
-    }
-
-    .Heading__avatar-icon img {
-        height: 50px;
-        width: 50px;
-    }
-   
-    .Heading__dot {
-        padding: 5px !important;
-        margin-left: 10px !important;
-    }
-   
-    .Heading__dot i {
-        color: #fff;
-        cursor: pointer;
-    }
+  .Heading {
+    height: 70px;
+    background-color: #009688;
+  }
 }

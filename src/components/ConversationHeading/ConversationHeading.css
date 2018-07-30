@@ -1,9 +1,20 @@
-.Heading__name {
+.ConversationHeading__avatar {
+  padding: 0;
+  cursor: pointer;
+}
+
+.ConversationHeading__avatar__icon img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.ConversationHeading__name {
   padding: 0 !important;
   cursor: pointer;
 }
 
-.Heading__name-meta {
+.ConversationHeading__name__meta {
   font-weight: 700;
   font-size: 100%;
   padding: 5px;
@@ -15,7 +26,7 @@
   display: block;
 }
 
-.Heading__online {
+.ConversationHeading__online {
   padding: 0 5px;
   font-size: 12px;
   color: #93918f;

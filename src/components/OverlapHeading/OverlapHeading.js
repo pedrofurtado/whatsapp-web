@@ -2,24 +2,24 @@ import React, { Component } from 'react';
 import './OverlapHeading.css';
 
 class OverlapHeading extends Component {
-    handleBack(e) {
-        if(this.props.hasOwnProperty('onBackClick') && typeof(this.props.onBackClick) === 'function') {
-            this.props.onBackClick();
-        }
+  handleBack(e) {
+    if(this.props.hasOwnProperty('onBackClick') && typeof(this.props.onBackClick) === 'function') {
+      this.props.onBackClick();
     }
+  }
 
   render() {
     return (
-        <div className="row OverlapHeading__heading">
-            <div className="row OverlapHeading__main">
-                <div onClick={(e) => this.handleBack(e)} className="col-sm-2 col-xs-2 OverlapHeading__back">
-                    <i className="fa fa-arrow-left" aria-hidden="true"></i>
-                </div>
-                <div className="col-sm-10 col-xs-10 OverlapHeading__title">
-                    New Chat11@...
-                </div>
-            </div>
+      <div className='OverlapHeading row'>
+        <div className='OverlapHeading__heading row'>
+          <div onClick={(e) => this.handleBack(e)} className='OverlapHeading__heading__backButton col-sm-2 col-xs-2'>
+            <i className='fa fa-arrow-left' aria-hidden='true'></i>
+          </div>
+          <div className='OverlapHeading__heading__title col-sm-10 col-xs-10'>
+            New Chat11@...
+          </div>
         </div>
+      </div>
     );
   }
 }

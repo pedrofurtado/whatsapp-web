@@ -1,6 +1,6 @@
 {
   "name": "whatsapp-web",
-  "version": "1.0.0-dev",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.1.1",

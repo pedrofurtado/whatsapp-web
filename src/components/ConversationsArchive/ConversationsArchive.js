@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import avatar from './avatar.png';
 import './ConversationsArchive.css';
 import ConversationsArchiveItem from './components/ConversationsArchiveItem/ConversationsArchiveItem';
 
@@ -7,7 +8,7 @@ class ConversationsArchive extends Component {
     conversations: [
       {
         name: 'Grupo 1',
-        avatar: 'avatar 1',
+        avatar: avatar,
         lastMessage: {
           text: 'bora la?',
           sentAt: '01/0121',
@@ -16,7 +17,7 @@ class ConversationsArchive extends Component {
       },
       {
         name: 'eita kkkk',
-        avatar: 'asd',
+        avatar: avatar,
         lastMessage: {
           text: 'eu fui ontem',
           sentAt: '01-01-1990',
@@ -25,7 +26,7 @@ class ConversationsArchive extends Component {
       },
       {
         name: 'churras',
-        avatar: 'asd',
+        avatar: avatar,
         lastMessage: {
           text: 'nao sei man',
           sentAt: '19:88',

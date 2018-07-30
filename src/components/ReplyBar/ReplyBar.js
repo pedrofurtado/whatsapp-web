@@ -13,14 +13,14 @@ class ReplyBar extends Component {
           <div className='ReplyBar__emojis col-sm-1 col-xs-1'>
             <i className='fa fa-smile-o'></i>
           </div>
-          <div className='ReplyBar__main col-sm-9 col-xs-9'>
-            <input id='comment' className='form-control' onChange={(e) => this.handleChange(e)} value={this.state.text} />
+          <div className='ReplyBar__form col-sm-9 col-xs-9'>
+            <textarea className='ReplyBar__form__input form-control' onChange={(e) => this.handleChange(e)} value={this.state.text}></textarea>
           </div>
-          <div className="ReplyBar__recording col-sm-1 col-xs-1">
-            <i className="fa fa-microphone" aria-hidden="true"></i>
+          <div className='ReplyBar__recording col-sm-1 col-xs-1'>
+            <i className='fa fa-microphone' aria-hidden='true'></i>
           </div>
-          <div className="ReplyBar__send col-sm-1 col-xs-1">
-            <button><i className="fa fa-send" aria-hidden="true"></i></button>
+          <div className='ReplyBar__send col-sm-1 col-xs-1'>
+            <button><i className='fa fa-send' aria-hidden='true'></i></button>
           </div>
         </form>
       </div>
