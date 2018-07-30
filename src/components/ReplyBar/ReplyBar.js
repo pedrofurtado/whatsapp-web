@@ -14,7 +14,7 @@ class ReplyBar extends Component {
             <i className='fa fa-smile-o'></i>
           </div>
           <div className='ReplyBar__form col-sm-9 col-xs-9'>
-            <textarea className='ReplyBar__form__input form-control' onChange={(e) => this.handleChange(e)} value={this.state.text}></textarea>
+            <input className='ReplyBar__form__input form-control' onChange={(e) => this.handleChange(e)} value={this.state.text} />
           </div>
           <div className='ReplyBar__recording col-sm-1 col-xs-1'>
             <i className='fa fa-microphone' aria-hidden='true'></i>

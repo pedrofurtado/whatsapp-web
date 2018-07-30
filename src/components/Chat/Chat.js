@@ -6,7 +6,7 @@ import Message from './components/Message/Message';
 class Chat extends Component {
   render() {
     return (
-      <div className='Chat row' style={{ backgroundImage: `url(${background})` }}>
+      <div className='Chat row' style={{ background: `url(${background}) fixed center` }}>
         {this.props.messages.map(message => (
           <Message {...message} key={message.sentAt} />
         ))}
