@@ -18,17 +18,25 @@ class SideBar extends Component {
     this.setState({ activeSideBar: 'second' });
   }
 
+  onSearchInSideBarFirst = (text) => {
+    console.log('Searched text in SideBarFirst: ', text);
+  }
+
+  onSearchInSideBarSecond = (text) => {
+    console.log('Searched text in SideBarSecond: ', text);
+  }
+
   render() {
     return (
       <div className={`SideBar col-md-4 SideBar--${this.state.activeSideBar}-active`}>
         <div className='SideBar__first'>
           <SideBarHeading onComposeClick={this.handleComposeClick} />
-          <SearchBox />
+          <SearchBox onSearch={this.onSearchInSideBarFirst} />
           <ConversationsArchive />
         </div>
         <div className='SideBar__second'>
           <OverlapHeading onBackClick={this.handleBackClick} />
-          <SearchBox />
+          <SearchBox onSearch={this.onSearchInSideBarSecond} />
           <ConversationsArchive />
         </div>
       </div>
