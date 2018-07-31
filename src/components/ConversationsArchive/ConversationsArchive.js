@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import uuid from 'uuid/v1';
 import avatar from './avatar.png';
 import './ConversationsArchive.css';
 import ConversationsArchiveItem from './components/ConversationsArchiveItem/ConversationsArchiveItem';
@@ -148,7 +149,7 @@ class ConversationsArchive extends Component {
     return (
       <div className='ConversationsArchive row'>
         {this.state.conversations.map((conversation) => (
-          <ConversationsArchiveItem {...conversation} key={conversation.name} />
+          <ConversationsArchiveItem {...conversation} key={uuid()} />
         ))}
       </div>
     );
