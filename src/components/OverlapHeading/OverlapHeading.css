@@ -1,35 +1,17 @@
 .OverlapHeading {
-  padding: 10px 16px 10px 15px !important;
-  margin: 0 !important;
-  height: 100px;
-  width: 100%;
-  background-color: #00bfa5;
-  z-index: 1001;
-}
-
-.OverlapHeading__heading {
-  padding: 10px 16px 0 15px !important;
-  margin: 0 !important;
+  margin: 0;
   height: 60px;
-  margin-top: 30px !important;
-  width: 100%;
-  z-index: 1001;
+  background-color: #00bfa5;
   color: #fff;
 }
 
-.OverlapHeading__heading__title {
-  font-size: 18px;
-  font-weight: 700;
-  padding: 10px 5px !important;
+.OverlapHeading__heading__title,
+.OverlapHeading__heading__backButton {
+  line-height: 60px;
 }
 
 .OverlapHeading__heading__backButton {
+  padding-right: 0;
   text-align: center;
-  padding: 12px 5px !important;
-  display: block;
   cursor: pointer;
-}
-
-.OverlapHeading__heading__backButton i {
-  margin: auto !important;
 }

@@ -6,27 +6,6 @@ class ReplyBar extends Component {
     text: ''
   }
 
-  render() {
-    return (
-      <div className='ReplyBar row'>
-        <form onSubmit={(e) => this.handleSubmit(e)}>
-          <div className='ReplyBar__emojis col-sm-1 col-xs-1'>
-            <i className='fa fa-smile-o'></i>
-          </div>
-          <div className='ReplyBar__form col-sm-9 col-xs-9'>
-            <input className='ReplyBar__form__input form-control' onChange={(e) => this.handleChange(e)} value={this.state.text} />
-          </div>
-          <div className='ReplyBar__recording col-sm-1 col-xs-1'>
-            <i className='fa fa-microphone' aria-hidden='true'></i>
-          </div>
-          <div className='ReplyBar__send col-sm-1 col-xs-1'>
-            <button><i className='fa fa-send' aria-hidden='true'></i></button>
-          </div>
-        </form>
-      </div>
-    );
-  }
-
   handleChange(e) {
     this.setState({ text: e.target.value });
   }
@@ -47,6 +26,27 @@ class ReplyBar extends Component {
     }
 
     this.setState({ text: '' });
+  }
+
+  render() {
+    return (
+      <div className='ReplyBar row'>
+        <form onSubmit={(e) => this.handleSubmit(e)}>
+          <div className='ReplyBar__emojis col-md-1'>
+            <i className='fa fa-smile-o'></i>
+          </div>
+          <div className='ReplyBar__form col-md-9'>
+            <input className='ReplyBar__form__input form-control' onChange={(e) => this.handleChange(e)} value={this.state.text} />
+          </div>
+          <div className='ReplyBar__recording col-md-1'>
+            <i className='fa fa-microphone'></i>
+          </div>
+          <div className='ReplyBar__send col-md-1'>
+            <i className='fa fa-send'></i>
+          </div>
+        </form>
+      </div>
+    );
   }
 }
 

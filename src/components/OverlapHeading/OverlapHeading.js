@@ -11,12 +11,12 @@ class OverlapHeading extends Component {
   render() {
     return (
       <div className='OverlapHeading row'>
-        <div className='OverlapHeading__heading row'>
-          <div onClick={(e) => this.handleBack(e)} className='OverlapHeading__heading__backButton col-sm-2 col-xs-2'>
+        <div className='OverlapHeading__heading'>
+          <div onClick={(e) => this.handleBack(e)} className='OverlapHeading__heading__backButton col-md-2'>
             <i className='fa fa-arrow-left' aria-hidden='true'></i>
           </div>
-          <div className='OverlapHeading__heading__title col-sm-10 col-xs-10'>
-            New Chat11@...
+          <div className='OverlapHeading__heading__title col-md-10'>
+            <strong>Start a new chat</strong>
           </div>
         </div>
       </div>

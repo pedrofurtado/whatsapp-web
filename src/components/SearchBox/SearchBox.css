@@ -1,19 +1,20 @@
 .SearchBox {
-  padding: 0 !important;
-  margin: 0 !important;
+  padding: 0;
+  margin: 0;
   height: 60px;
-  width: 100%;
 }
 
 .SearchBox__form {
-  height: 100%;
-  width: 100%;
-  padding: 10px !important;
+  padding: 10px;
   background-color: #fbfbfb;
 }
 
-.SearchBox__form input:focus {
-  outline: none;
-  border: none;
+.SearchBox__form__input,
+.SearchBox__form__input:focus {
+  border-color: #ccc;
   box-shadow: none;
+}
+
+.SearchBox__form__search_icon {
+  color: #93918f;
 }

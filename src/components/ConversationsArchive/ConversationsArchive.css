@@ -1,14 +1,6 @@
 .ConversationsArchive {
-  padding: 0 !important;
-  margin: 0 !important;
+  margin: 0;
   background-color: #fff;
-  overflow-y: auto;
-  border: 1px solid #f7f7f7;
+  overflow-y: scroll;
   height: calc(100% - 120px);
-}
-
-@media screen and (max-width: 700px) {
-  .ConversationsArchive {
-    height: calc(100% - 130px);
-  }
 }

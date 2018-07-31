@@ -1,107 +1,24 @@
 .ReplyBar {
-  height: 60px;
-  width: 100%;
   background-color: #f5f1ee;
-  padding: 10px 5px 10px 5px !important;
-  margin: 0 !important;
-  z-index: 1000;
+  margin: 0;
+  padding-top: 15px;
 }
 
-.ReplyBar__emojis {
-  padding: 5px !important;
-}
-
-.ReplyBar__emojis i {
-  text-align: center;
-  padding: 5px 5px 5px 5px !important;
-  color: #93918f;
-  cursor: pointer;
-}
-
-.ReplyBar__recording {
-  padding: 5px !important;
-}
-
-.ReplyBar__recording i {
-  text-align: center;
-  padding: 5px !important;
-  color: #93918f;
-  cursor: pointer;
-}
-
+.ReplyBar__emojis,
+.ReplyBar__recording,
 .ReplyBar__send {
-  padding: 5px !important;
-}
-
-.ReplyBar__send i {
+  font-size: 20px;
   text-align: center;
-  padding: 5px !important;
   color: #93918f;
-  cursor: pointer;
+
 }
 
 .ReplyBar__form {
-  padding: 2px 5px !important;
+  padding: 0;
 }
 
-.ReplyBar__form__input {
-  width: 100%;
-  resize: none;
-  overflow: hidden;
-  padding: 5px !important;
-  outline: none;
-  border: none;
-  text-indent: 5px;
-  box-shadow: none;
-  height: 100%;
-  font-size: 16px;
-}
-
+.ReplyBar__form__input,
 .ReplyBar__form__input:focus {
-  outline: none;
-  border: none;
-  text-indent: 5px;
+  border-color: #ccc;
   box-shadow: none;
-}
-
-@media screen and (max-width: 700px) {
-  .ReplyBar {
-    height: 70px;
-  }
-
-  .ReplyBar__emojis {
-    padding: 5px 0 !important;
-  }
-
-  .ReplyBar__emojis i {
-    padding: 5px 2px !important;
-    font-size: 1.8em !important;
-  }
-
-  .ReplyBar__form {
-    padding: 2px 8px !important;
-  }
-
-  .ReplyBar__form__input {
-    padding: 8px !important;
-    font-size: 18px;
-  }
-
-  .ReplyBar__recording {
-    padding: 5px 0 !important;
-  }
-
-  .ReplyBar__recording i {
-    padding: 5px 0 !important;
-    font-size: 1.8em !important;
-  }
-
-  .ReplyBar__send {
-    padding: 5px 0 !important;
-  }
-
-  .ReplyBar__send i {
-    padding: 5px 2px 5px 0 !important;
-    font-size: 1.8em !important;
-  }
 }

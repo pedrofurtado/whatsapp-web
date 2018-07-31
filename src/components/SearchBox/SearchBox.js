@@ -5,10 +5,10 @@ class SearchBox extends Component {
   render() {
     return (
       <div className='SearchBox row'>
-        <div className='SearchBox__form col-sm-12'>
+        <div className='SearchBox__form col-md-12'>
           <div className='form-group has-feedback'>
-            <input type='text' className='form-control' />
-            <span className='glyphicon glyphicon-search form-control-feedback'></span>
+            <input type='text' className='SearchBox__form__input form-control' />
+            <span className='SearchBox__form__search_icon glyphicon glyphicon-search form-control-feedback'></span>
           </div>
         </div>
       </div>
