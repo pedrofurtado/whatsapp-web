@@ -20,7 +20,7 @@ class ReplyBar extends Component {
     if(this.props.hasOwnProperty('onReply') && typeof(this.props.onReply) === 'function') {
       this.props.onReply({
         text: this.state.text,
-        sentAt: Date.now(),
+        sentAt: '07/12/2011 15:55',
         origin: 'sender'
       });
     }

@@ -11,134 +11,134 @@ class ConversationsArchive extends Component {
         name: 'Grupo 1',
         avatar: avatar,
         lastMessage: {
-          text: 'bora la?',
-          sentAt: '01/0121',
+          text: 'Let"s play video game!',
+          sentAt: '03/04/2018 09:32',
           origin: 'receiver'
         }
       },
       {
-        name: 'eita kkkk',
+        name: 'I really like Mario Bros',
         avatar: avatar,
         lastMessage: {
           text: 'eu fui ontem',
-          sentAt: '01-01-1990',
+          sentAt: '01/01/1990 21:10',
           origin: 'receiver'
         }
       },
       {
-        name: 'churras',
+        name: 'I dont know exactly ...',
         avatar: avatar,
         lastMessage: {
           text: 'nao sei man',
-          sentAt: '19:88',
+          sentAt: '15/10/2010 19:08',
           origin: 'receiver'
         }
       },
       {
-        name: 'eita kkkk',
+        name: 'I really like Mario Bros',
         avatar: avatar,
         lastMessage: {
           text: 'eu fui ontem',
-          sentAt: '01-01-1990',
+          sentAt: '01/01/1990 21:10',
           origin: 'receiver'
         }
       },
       {
-        name: 'churras',
+        name: 'I dont know exactly ...',
         avatar: avatar,
         lastMessage: {
           text: 'nao sei man',
-          sentAt: '19:88',
+          sentAt: '15/10/2010 19:08',
           origin: 'receiver'
         }
       },
       {
-        name: 'eita kkkk',
+        name: 'I really like Mario Bros',
         avatar: avatar,
         lastMessage: {
           text: 'eu fui ontem',
-          sentAt: '01-01-1990',
+          sentAt: '01/01/1990 21:10',
           origin: 'receiver'
         }
       },
       {
-        name: 'churras',
+        name: 'I dont know exactly ...',
         avatar: avatar,
         lastMessage: {
           text: 'nao sei man',
-          sentAt: '19:88',
+          sentAt: '15/10/2010 19:08',
           origin: 'receiver'
         }
       },
       {
-        name: 'eita kkkk',
+        name: 'I really like Mario Bros',
         avatar: avatar,
         lastMessage: {
           text: 'eu fui ontem',
-          sentAt: '01-01-1990',
+          sentAt: '01/01/1990 21:10',
           origin: 'receiver'
         }
       },
       {
-        name: 'churras',
+        name: 'I dont know exactly ...',
         avatar: avatar,
         lastMessage: {
           text: 'nao sei man',
-          sentAt: '19:88',
+          sentAt: '15/10/2010 19:08',
           origin: 'receiver'
         }
       },
       {
-        name: 'eita kkkk',
+        name: 'I really like Mario Bros',
         avatar: avatar,
         lastMessage: {
           text: 'eu fui ontem',
-          sentAt: '01-01-1990',
+          sentAt: '01/01/1990 21:10',
           origin: 'receiver'
         }
       },
       {
-        name: 'churras',
+        name: 'I dont know exactly ...',
         avatar: avatar,
         lastMessage: {
           text: 'nao sei man',
-          sentAt: '19:88',
+          sentAt: '15/10/2010 19:08',
           origin: 'receiver'
         }
       },
       {
-        name: 'eita kkkk',
+        name: 'I really like Mario Bros',
         avatar: avatar,
         lastMessage: {
           text: 'eu fui ontem',
-          sentAt: '01-01-1990',
+          sentAt: '01/01/1990 21:10',
           origin: 'receiver'
         }
       },
       {
-        name: 'churras',
+        name: 'I dont know exactly ...',
         avatar: avatar,
         lastMessage: {
           text: 'nao sei man',
-          sentAt: '19:88',
+          sentAt: '15/10/2010 19:08',
           origin: 'receiver'
         }
       },
       {
-        name: 'eita kkkk',
+        name: 'I really like Mario Bros',
         avatar: avatar,
         lastMessage: {
           text: 'eu fui ontem',
-          sentAt: '01-01-1990',
+          sentAt: '01/01/1990 21:10',
           origin: 'receiver'
         }
       },
       {
-        name: 'churras',
+        name: 'I dont know exactly ...',
         avatar: avatar,
         lastMessage: {
           text: 'nao sei man',
-          sentAt: '19:88',
+          sentAt: '15/10/2010 19:08',
           origin: 'receiver'
         }
       }
