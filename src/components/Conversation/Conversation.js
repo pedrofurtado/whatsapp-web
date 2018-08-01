@@ -46,7 +46,7 @@ class Conversation extends Component {
   render() {
     return (
       <div className='Conversation'>
-        <ConversationHeading />
+        <ConversationHeading name='Pedro Furtado' />
         <Chat ref='chatComponent' messages={this.state.messages} />
         <ReplyBar onReply={this.handleReply} />
       </div>

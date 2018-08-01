@@ -14,7 +14,7 @@ class ConversationsArchiveItem extends Component {
           <div className='ConversationsArchiveItem__info col-md-9 col-sm-9 col-xs-9'>
             <span className='ConversationsArchiveItem__info__name'><strong>{this.props.name}</strong></span>
             <br />
-            <span className='ConversationsArchiveItem__info__time'>{`${this.props.lastMessage.text.length > 12 ? this.props.lastMessage.text.substring(0, 12) + '...' : this.props.lastMessage.text} | ${this.props.lastMessage.sentAt}`}</span>
+            <span className='ConversationsArchiveItem__info__time'>{this.props.lastMessage.text.length > 12 ? this.props.lastMessage.text.substring(0, 12).concat('...') : this.props.lastMessage.text}</span>
           </div>
         </div>
       </div>
