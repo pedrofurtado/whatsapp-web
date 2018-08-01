@@ -7,16 +7,16 @@ class ConversationHeading extends Component {
   render() {
     return (
       <Heading>
-        <div className='ConversationHeading__avatar col-md-1'>
+        <div className='ConversationHeading__avatar col-md-1 col-sm-1 col-xs-2'>
           <div className='ConversationHeading__avatar__icon'>
             <img src={avatar} alt='avatar' />
           </div>
         </div>
-        <div className='ConversationHeading__name col-md-10'>
+        <div className='ConversationHeading__name col-md-10 col-sm-10 col-xs-9'>
           <strong className='ConversationHeading__name__meta'>Pedro Furtado</strong>
           <div className='ConversationHeading__online'>Online</div>
         </div>
-        <div className='ConversationHeading__dot col-md-1'>
+        <div className='ConversationHeading__dot col-md-1 col-sm-1 col-xs-1'>
           <i className='ConversationHeading__dot__icon fa fa-ellipsis-v' aria-hidden='true'></i>
         </div>
       </Heading>

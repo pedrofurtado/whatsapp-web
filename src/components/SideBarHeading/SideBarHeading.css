@@ -8,9 +8,11 @@
   width: 40px;
 }
 
-.SideBarHeading__menu__icon,
-.SideBarHeading__conversations__icon {
-  text-align: center;
+.SideBarHeading__menu,
+.SideBarHeading__conversations {
+  padding-right: 0;
+  padding-left: 0;
+  text-align: right;
   line-height: 35px;
   color: #93918f;
 }

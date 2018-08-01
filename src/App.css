@@ -26,6 +26,10 @@ body:before {
   left: 0;
 }
 
+.no-padding {
+  padding: 0;
+}
+
 .App {
   position: relative;
   overflow: hidden;

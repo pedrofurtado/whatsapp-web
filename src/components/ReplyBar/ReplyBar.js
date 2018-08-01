@@ -32,16 +32,16 @@ class ReplyBar extends Component {
     return (
       <div className='ReplyBar row'>
         <form onSubmit={(e) => this.handleSubmit(e)}>
-          <div className='ReplyBar__emojis col-md-1'>
+          <div className='ReplyBar__emojis col-md-1 col-sm-1 col-xs-1'>
             <i className='fa fa-smile-o'></i>
           </div>
-          <div className='ReplyBar__form col-md-9'>
+          <div className='ReplyBar__form col-md-9 col-sm-9 col-xs-9'>
             <input className='ReplyBar__form__input form-control' onChange={(e) => this.handleChange(e)} value={this.state.text} />
           </div>
-          <div className='ReplyBar__recording col-md-1'>
+          <div className='ReplyBar__recording col-md-1 col-sm-1 col-xs-1'>
             <i className='fa fa-microphone'></i>
           </div>
-          <div className='ReplyBar__send col-md-1'>
+          <div className='ReplyBar__send col-md-1 col-sm-1 col-xs-1'>
             <i className='fa fa-send'></i>
           </div>
         </form>

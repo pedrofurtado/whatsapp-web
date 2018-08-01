@@ -28,7 +28,7 @@ class SideBar extends Component {
 
   render() {
     return (
-      <div className={`SideBar col-md-4 SideBar--${this.state.activeSideBar}-active`}>
+      <div className={`SideBar SideBar--${this.state.activeSideBar}-active`}>
         <div className='SideBar__first'>
           <SideBarHeading onComposeClick={this.handleComposeClick} />
           <SearchBox onSearch={this.onSearchInSideBarFirst} />

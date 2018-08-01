@@ -11,8 +11,12 @@ class App extends Component {
     return (
       <div className='App container'>
         <div className='App__row row'>
-          <SideBar />
-          <Conversation />
+          <div className='hidden-sm hidden-xs col-md-4 col-xs-12 no-padding'>
+            <SideBar />
+          </div>
+          <div className='col-md-8 col-xs-12 no-padding'>
+            <Conversation />
+          </div>
         </div>
       </div>
     );
