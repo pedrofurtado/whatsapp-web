@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import '@fortawesome/fontawesome-free/css/v4-shims.min.css';
 import './App.css';
-import Conversation from './components/Conversation/Conversation';
-import SideBar from './components/SideBar/SideBar';
+import Conversation from '../components/Conversation/Conversation';
+import SideBar from '../components/SideBar/SideBar';
 
 class App extends Component {
   render() {

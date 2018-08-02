@@ -1,19 +1,27 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import './Conversation.css';
 import Chat from '../Chat/Chat';
 import ReplyBar from '../ReplyBar/ReplyBar';
 import ConversationHeading from '../ConversationHeading/ConversationHeading';
+import * as MessageActions from '../../redux/actions/message';
 
 class Conversation extends Component {
   state = {
-    messages: [
-      {
-        text: 'Hey! Whats up?',
-        sentAt: '10/10/1990 13:33',
-        origin: 'receiver'
-      }
-    ]
+    messages: []
+  }
+
+  static contextTypes = {
+    store: PropTypes.object
+  }
+
+  componentDidMount() {
+    this.context.store.subscribe(() => {
+      this.setState({
+        messages: this.context.store.getState().messages
+      })
+    });
   }
 
   generateRandomReceiverReply() {
@@ -23,7 +31,7 @@ class Conversation extends Component {
       origin: 'receiver'
     };
 
-    this.setState({ messages: [...this.state.messages, receiverReply] });
+    this.context.store.dispatch(MessageActions.create(receiverReply));
   }
 
   componentDidUpdate() {
@@ -36,7 +44,7 @@ class Conversation extends Component {
   }
 
   handleReply = (reply) => {
-    this.setState({ messages: [...this.state.messages, reply] });
+    this.context.store.dispatch(MessageActions.create(reply));
 
     setTimeout(() => {
       this.generateRandomReceiverReply();
