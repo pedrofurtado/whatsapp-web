@@ -4,7 +4,7 @@ import './ConversationHeading.css'
 import Heading from '../Heading/Heading'
 
 class ConversationHeading extends Component {
-  render() {
+  render () {
     return (
       <Heading>
         <div className='ConversationHeading__avatar col-md-1 col-sm-1 col-xs-2'>
@@ -17,7 +17,7 @@ class ConversationHeading extends Component {
           <div className='ConversationHeading__online'>Online</div>
         </div>
         <div className='ConversationHeading__dot col-md-1 col-sm-1 col-xs-1'>
-          <i className='ConversationHeading__dot__icon fa fa-ellipsis-v' aria-hidden='true'></i>
+          <i className='ConversationHeading__dot__icon fa fa-ellipsis-v' aria-hidden='true' />
         </div>
       </Heading>
     )

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './ConversationsArchiveItem.css'
 
 class ConversationsArchiveItem extends Component {
-  render() {
+  render () {
     return (
       <div className='ConversationsArchiveItem col-md-12 col-sm-12 col-xs-12'>
         <div className='row'>

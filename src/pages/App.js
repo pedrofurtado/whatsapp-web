@@ -7,7 +7,7 @@ import Conversation from '../components/Conversation/Conversation'
 import SideBar from '../components/SideBar/SideBar'
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <div className='App container'>
         <div className='App__row row'>

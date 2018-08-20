@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './Message.css'
 
 class Message extends Component {
-  render() {
+  render () {
     return (
       <div className={`Message Message--${this.props.origin} row`}>
         <div className={`Message__wrapper col-sm-12`}>

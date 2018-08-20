@@ -4,7 +4,7 @@ import './Chat.css'
 import Message from './components/Message/Message'
 
 class Chat extends Component {
-  render() {
+  render () {
     return (
       <div className='Chat row' style={{ background: `url(${background}) fixed center` }}>
         {this.props.messages.map(message => (

@@ -9,16 +9,16 @@ import ConversationHeading from '../ConversationHeading/ConversationHeading'
 import { load as loadMessages, create as createMessage, remove as removeMessage, removeAll as removeAllMessages } from '../../redux/ducks/message'
 
 class Conversation extends Component {
-  componentDidUpdate() {
+  componentDidUpdate () {
     this.scrollChatToBottom()
   }
 
-  scrollChatToBottom() {
+  scrollChatToBottom () {
     const chat = ReactDOM.findDOMNode(this.refs.chatComponent)
     chat.scrollTop = chat.scrollHeight - chat.clientHeight
   }
 
-  render() {
+  render () {
     return (
       <div className='Conversation'>
         <ConversationHeading name='Pedro Furtado' />

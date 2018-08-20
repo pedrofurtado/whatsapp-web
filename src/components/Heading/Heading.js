@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './Heading.css'
 
 class Heading extends Component {
-  render() {
+  render () {
     return (
       <div className='Heading row'>
         {this.props.children}
