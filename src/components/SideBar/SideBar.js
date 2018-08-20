@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import './SideBar.css';
-import ConversationsArchive from '../ConversationsArchive/ConversationsArchive';
-import SideBarHeading from '../SideBarHeading/SideBarHeading';
-import SearchBox from '../SearchBox/SearchBox';
-import OverlapHeading from '../OverlapHeading/OverlapHeading';
+import React, { Component } from 'react'
+import './SideBar.css'
+import ConversationsArchive from '../ConversationsArchive/ConversationsArchive'
+import SideBarHeading from '../SideBarHeading/SideBarHeading'
+import SearchBox from '../SearchBox/SearchBox'
+import OverlapHeading from '../OverlapHeading/OverlapHeading'
 
 class SideBar extends Component {
   state = {
@@ -11,19 +11,19 @@ class SideBar extends Component {
   }
 
   handleBackClick = () => {
-    this.setState({ activeSideBar: 'first' });
+    this.setState({ activeSideBar: 'first' })
   }
 
   handleComposeClick = () => {
-    this.setState({ activeSideBar: 'second' });
+    this.setState({ activeSideBar: 'second' })
   }
 
   onSearchInSideBarFirst = (text) => {
-    console.log('Searched text in SideBarFirst: ', text);
+    console.log('Searched text in SideBarFirst: ', text)
   }
 
   onSearchInSideBarSecond = (text) => {
-    console.log('Searched text in SideBarSecond: ', text);
+    console.log('Searched text in SideBarSecond: ', text)
   }
 
   render() {
@@ -40,8 +40,8 @@ class SideBar extends Component {
           <ConversationsArchive />
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default SideBar;
+export default SideBar

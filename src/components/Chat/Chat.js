@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import background from './background.png';
-import './Chat.css';
-import Message from './components/Message/Message';
+import React, { Component } from 'react'
+import background from './background.png'
+import './Chat.css'
+import Message from './components/Message/Message'
 
 class Chat extends Component {
   render() {
@@ -11,8 +11,8 @@ class Chat extends Component {
           <Message {...message} key={message.uuid} />
         ))}
       </div>
-    );
+    )
   }
 }
 
-export default Chat;
+export default Chat

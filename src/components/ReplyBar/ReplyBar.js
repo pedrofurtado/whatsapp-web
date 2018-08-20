@@ -1,31 +1,28 @@
-import React, { Component } from 'react';
-import './ReplyBar.css';
+import React, { Component } from 'react'
+import './ReplyBar.css'
 
 class ReplyBar extends Component {
-  state = {
-    text: ''
-  }
+  state = { text: '' }
 
   handleChange(e) {
-    this.setState({ text: e.target.value });
+    this.setState({ text: e.target.value })
   }
 
   handleSubmit(e) {
-    e.preventDefault();
+    e.preventDefault()
 
-    if (!this.state.text.length) {
-      return;
-    }
+    if (!this.state.text.length) { return }
 
     if(this.props.hasOwnProperty('onReply') && typeof(this.props.onReply) === 'function') {
       this.props.onReply({
         text: this.state.text,
+        uuid: `uuid-${(new Date()).toISOString()}`,
         sentAt: '07/12/2011 15:55',
         origin: 'sender'
-      });
+      })
     }
 
-    this.setState({ text: '' });
+    this.setState({ text: '' })
   }
 
   render() {
@@ -46,8 +43,8 @@ class ReplyBar extends Component {
           </div>
         </form>
       </div>
-    );
+    )
   }
 }
 
-export default ReplyBar;
+export default ReplyBar

@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import './OverlapHeading.css';
+import React, { Component } from 'react'
+import './OverlapHeading.css'
 
 class OverlapHeading extends Component {
   handleBack(e) {
     if(this.props.hasOwnProperty('onBackClick') && typeof(this.props.onBackClick) === 'function') {
-      this.props.onBackClick();
+      this.props.onBackClick()
     }
   }
 
@@ -20,8 +20,8 @@ class OverlapHeading extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default OverlapHeading;
+export default OverlapHeading

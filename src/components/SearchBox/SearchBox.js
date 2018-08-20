@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './SearchBox.css';
+import React, { Component } from 'react'
+import './SearchBox.css'
 
 class SearchBox extends Component {
   render() {
@@ -12,8 +12,8 @@ class SearchBox extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default SearchBox;
+export default SearchBox

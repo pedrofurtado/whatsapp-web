@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './Heading.css';
+import React, { Component } from 'react'
+import './Heading.css'
 
 class Heading extends Component {
   render() {
@@ -7,8 +7,8 @@ class Heading extends Component {
       <div className='Heading row'>
         {this.props.children}
       </div>
-    );
+    )
   }
 }
 
-export default Heading;
+export default Heading

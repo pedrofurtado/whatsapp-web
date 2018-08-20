@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import avatar from './avatar.png';
-import './ConversationHeading.css';
-import Heading from '../Heading/Heading';
+import React, { Component } from 'react'
+import avatar from './avatar.png'
+import './ConversationHeading.css'
+import Heading from '../Heading/Heading'
 
 class ConversationHeading extends Component {
   render() {
@@ -20,8 +20,8 @@ class ConversationHeading extends Component {
           <i className='ConversationHeading__dot__icon fa fa-ellipsis-v' aria-hidden='true'></i>
         </div>
       </Heading>
-    );
+    )
   }
 }
 
-export default ConversationHeading;
+export default ConversationHeading

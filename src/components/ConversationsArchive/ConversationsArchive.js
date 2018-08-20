@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
-import avatar from './avatar.png';
-import './ConversationsArchive.css';
-import ConversationsArchiveItem from './components/ConversationsArchiveItem/ConversationsArchiveItem';
+import React, { Component } from 'react'
+import avatar from './avatar.png'
+import './ConversationsArchive.css'
+import ConversationsArchiveItem from './components/ConversationsArchiveItem/ConversationsArchiveItem'
 
 class ConversationsArchive extends Component {
   state = {
     conversations: [
       {
+        uuid: 'uuid1',
         name: 'Grupo 1',
         avatar: avatar,
         lastMessage: {
@@ -16,6 +17,7 @@ class ConversationsArchive extends Component {
         }
       },
       {
+        uuid: 'uuid2',
         name: 'I really like Mario Bros',
         avatar: avatar,
         lastMessage: {
@@ -25,6 +27,7 @@ class ConversationsArchive extends Component {
         }
       },
       {
+        uuid: 'uuid3',
         name: 'I dont know exactly ...',
         avatar: avatar,
         lastMessage: {
@@ -34,6 +37,7 @@ class ConversationsArchive extends Component {
         }
       },
       {
+        uuid: 'uuid4',
         name: 'I really like Mario Bros',
         avatar: avatar,
         lastMessage: {
@@ -43,6 +47,7 @@ class ConversationsArchive extends Component {
         }
       },
       {
+        uuid: 'uuid5',
         name: 'I dont know exactly ...',
         avatar: avatar,
         lastMessage: {
@@ -52,6 +57,7 @@ class ConversationsArchive extends Component {
         }
       },
       {
+        uuid: 'uuid6',
         name: 'I really like Mario Bros',
         avatar: avatar,
         lastMessage: {
@@ -61,6 +67,7 @@ class ConversationsArchive extends Component {
         }
       },
       {
+        uuid: 'uuid7',
         name: 'I dont know exactly ...',
         avatar: avatar,
         lastMessage: {
@@ -70,6 +77,7 @@ class ConversationsArchive extends Component {
         }
       },
       {
+        uuid: 'uuid8',
         name: 'I really like Mario Bros',
         avatar: avatar,
         lastMessage: {
@@ -79,6 +87,7 @@ class ConversationsArchive extends Component {
         }
       },
       {
+        uuid: 'uuid9',
         name: 'I dont know exactly ...',
         avatar: avatar,
         lastMessage: {
@@ -88,6 +97,7 @@ class ConversationsArchive extends Component {
         }
       },
       {
+        uuid: 'uuid10',
         name: 'I really like Mario Bros',
         avatar: avatar,
         lastMessage: {
@@ -97,6 +107,7 @@ class ConversationsArchive extends Component {
         }
       },
       {
+        uuid: 'uuid11',
         name: 'I dont know exactly ...',
         avatar: avatar,
         lastMessage: {
@@ -106,6 +117,7 @@ class ConversationsArchive extends Component {
         }
       },
       {
+        uuid: 'uuid12',
         name: 'I really like Mario Bros',
         avatar: avatar,
         lastMessage: {
@@ -115,6 +127,7 @@ class ConversationsArchive extends Component {
         }
       },
       {
+        uuid: 'uuid13',
         name: 'I dont know exactly ...',
         avatar: avatar,
         lastMessage: {
@@ -124,6 +137,7 @@ class ConversationsArchive extends Component {
         }
       },
       {
+        uuid: 'uuid14',
         name: 'I really like Mario Bros',
         avatar: avatar,
         lastMessage: {
@@ -133,6 +147,7 @@ class ConversationsArchive extends Component {
         }
       },
       {
+        uuid: 'uuid15',
         name: 'I dont know exactly ...',
         avatar: avatar,
         lastMessage: {
@@ -151,8 +166,8 @@ class ConversationsArchive extends Component {
           <ConversationsArchiveItem {...conversation} key={conversation.uuid} />
         ))}
       </div>
-    );
+    )
   }
 }
 
-export default ConversationsArchive;
+export default ConversationsArchive

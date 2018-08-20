@@ -1,65 +1,43 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
-import './Conversation.css';
-import Chat from '../Chat/Chat';
-import ReplyBar from '../ReplyBar/ReplyBar';
-import ConversationHeading from '../ConversationHeading/ConversationHeading';
-import * as MessageActions from '../../redux/actions/message';
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import './Conversation.css'
+import Chat from '../Chat/Chat'
+import ReplyBar from '../ReplyBar/ReplyBar'
+import ConversationHeading from '../ConversationHeading/ConversationHeading'
+import { load as loadMessages, create as createMessage, remove as removeMessage, removeAll as removeAllMessages } from '../../redux/ducks/message'
 
 class Conversation extends Component {
-  state = {
-    messages: []
-  }
-
-  static contextTypes = {
-    store: PropTypes.object
-  }
-
-  componentDidMount() {
-    this.context.store.subscribe(() => {
-      this.setState({
-        messages: this.context.store.getState().messages
-      })
-    });
-  }
-
-  generateRandomReceiverReply() {
-    const receiverReply = {
-      text: 'Really? Tell me more about that ...',
-      sentAt: '01/05/2018 10:30',
-      origin: 'receiver'
-    };
-
-    this.context.store.dispatch(MessageActions.create(receiverReply));
-  }
-
   componentDidUpdate() {
-    this.scrollBottomInChat();
+    this.scrollChatToBottom()
   }
 
-  scrollBottomInChat() {
-    const chat = ReactDOM.findDOMNode(this.refs.chatComponent);
-    chat.scrollTop = chat.scrollHeight - chat.clientHeight;
-  }
-
-  handleReply = (reply) => {
-    this.context.store.dispatch(MessageActions.create(reply));
-
-    setTimeout(() => {
-      this.generateRandomReceiverReply();
-    }, 2000);
+  scrollChatToBottom() {
+    const chat = ReactDOM.findDOMNode(this.refs.chatComponent)
+    chat.scrollTop = chat.scrollHeight - chat.clientHeight
   }
 
   render() {
     return (
       <div className='Conversation'>
         <ConversationHeading name='Pedro Furtado' />
-        <Chat ref='chatComponent' messages={this.state.messages} />
-        <ReplyBar onReply={this.handleReply} />
+        <Chat ref='chatComponent' messages={this.props.messages} />
+        <ReplyBar onReply={this.props.createMessage} />
       </div>
-    );
+    )
   }
 }
 
-export default Conversation;
+const mapStateToProps = state => ({
+  messages: state.messages
+})
+
+const mapDispatchToProps = dispatch => bindActionCreators({
+  loadMessages,
+  createMessage,
+  removeMessage,
+  removeAllMessages
+}, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps)(Conversation)

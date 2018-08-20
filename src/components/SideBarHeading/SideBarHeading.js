@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import avatar from './avatar.png';
-import './SideBarHeading.css';
-import Heading from '../Heading/Heading';
+import React, { Component } from 'react'
+import avatar from './avatar.png'
+import './SideBarHeading.css'
+import Heading from '../Heading/Heading'
 
 class SideBarHeading extends Component {
   handleCompose(e) {
     if(this.props.hasOwnProperty('onComposeClick') && typeof(this.props.onComposeClick) === 'function') {
-      this.props.onComposeClick();
+      this.props.onComposeClick()
     }
   }
 
@@ -25,8 +25,8 @@ class SideBarHeading extends Component {
           <i className='SideBarHeading__menu__icon fa fa-ellipsis-v'></i>
         </div>
       </Heading>
-    );
+    )
   }
 }
 
-export default SideBarHeading;
+export default SideBarHeading

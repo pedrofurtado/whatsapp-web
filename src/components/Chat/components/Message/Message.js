@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './Message.css';
+import React, { Component } from 'react'
+import './Message.css'
 
 class Message extends Component {
   render() {
@@ -12,8 +12,8 @@ class Message extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Message;
+export default Message

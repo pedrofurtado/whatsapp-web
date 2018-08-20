@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './ConversationsArchiveItem.css';
+import React, { Component } from 'react'
+import './ConversationsArchiveItem.css'
 
 class ConversationsArchiveItem extends Component {
   render() {
@@ -18,8 +18,8 @@ class ConversationsArchiveItem extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default ConversationsArchiveItem;
+export default ConversationsArchiveItem

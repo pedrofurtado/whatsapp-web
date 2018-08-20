@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import '@fortawesome/fontawesome-free/css/v4-shims.min.css';
-import './App.css';
-import Conversation from '../components/Conversation/Conversation';
-import SideBar from '../components/SideBar/SideBar';
+import React, { Component } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
+import '@fortawesome/fontawesome-free/css/v4-shims.min.css'
+import './App.css'
+import Conversation from '../components/Conversation/Conversation'
+import SideBar from '../components/SideBar/SideBar'
 
 class App extends Component {
   render() {
@@ -19,8 +19,8 @@ class App extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
