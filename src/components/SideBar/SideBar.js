@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 import './SideBar.css'
 import ConversationsArchive from '../ConversationsArchive/ConversationsArchive'
 import SideBarHeading from '../SideBarHeading/SideBarHeading'
 import SearchBox from '../SearchBox/SearchBox'
 import OverlapHeading from '../OverlapHeading/OverlapHeading'
+import { load as loadConversations, create as createConversation, remove as removeConversation, removeAll as removeAllConversations } from '../../redux/ducks/conversation'
 
 class SideBar extends Component {
   state = {
@@ -32,16 +35,27 @@ class SideBar extends Component {
         <div className='SideBar__first'>
           <SideBarHeading onComposeClick={this.handleComposeClick} />
           <SearchBox onSearch={this.onSearchInSideBarFirst} />
-          <ConversationsArchive />
+          <ConversationsArchive conversations={this.props.conversations} />
         </div>
         <div className='SideBar__second'>
           <OverlapHeading onBackClick={this.handleBackClick} />
           <SearchBox onSearch={this.onSearchInSideBarSecond} />
-          <ConversationsArchive />
+          <ConversationsArchive conversations={this.props.conversations} />
         </div>
       </div>
     )
   }
 }
 
-export default SideBar
+const mapStateToProps = state => ({
+  conversations: state.conversations
+})
+
+const mapDispatchToProps = dispatch => bindActionCreators({
+  loadConversations,
+  createConversation,
+  removeConversation,
+  removeAllConversations
+}, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps)(SideBar)
