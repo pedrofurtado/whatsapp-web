@@ -6,7 +6,7 @@ import './Conversation.css'
 import Chat from '../Chat/Chat'
 import ReplyBar from '../ReplyBar/ReplyBar'
 import ConversationHeading from '../ConversationHeading/ConversationHeading'
-import { load as loadMessages, create as createMessage, remove as removeMessage, removeAll as removeAllMessages } from '../../redux/ducks/message'
+import { create as createMessage } from '../../redux/ducks/message'
 
 class Conversation extends Component {
   componentDidUpdate () {
@@ -34,10 +34,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => bindActionCreators({
-  loadMessages,
-  createMessage,
-  removeMessage,
-  removeAllMessages
+  createMessage
 }, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(Conversation)

@@ -2,9 +2,15 @@ import React, { Component } from 'react'
 import './ConversationsArchiveItem.css'
 
 class ConversationsArchiveItem extends Component {
+  handleClick () {
+    if (this.props.hasOwnProperty('onClick') && typeof (this.props.onClick) === 'function') {
+      this.props.onClick(this.props)
+    }
+  }
+
   render () {
     return (
-      <div className='ConversationsArchiveItem col-md-12 col-sm-12 col-xs-12'>
+      <div onClick={() => this.handleClick()} className='ConversationsArchiveItem col-md-12 col-sm-12 col-xs-12'>
         <div className='row'>
           <div className='ConversationsArchiveItem__avatar col-md-3 col-sm-3 col-xs-3'>
             <div className='ConversationsArchiveItem__avatar__icon'>

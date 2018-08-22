@@ -6,11 +6,15 @@ import ConversationsArchive from '../ConversationsArchive/ConversationsArchive'
 import SideBarHeading from '../SideBarHeading/SideBarHeading'
 import SearchBox from '../SearchBox/SearchBox'
 import OverlapHeading from '../OverlapHeading/OverlapHeading'
-import { load as loadConversations, create as createConversation, remove as removeConversation, removeAll as removeAllConversations } from '../../redux/ducks/conversation'
+import { load as loadMessages } from '../../redux/ducks/message'
 
 class SideBar extends Component {
   state = {
     activeSideBar: 'first' // Possible values: 'first' or 'second'.
+  }
+
+  componentDidMount() {
+    this.props.loadMessages({ id: 3 });
   }
 
   handleBackClick = () => {
@@ -35,7 +39,7 @@ class SideBar extends Component {
         <div className='SideBar__first'>
           <SideBarHeading onComposeClick={this.handleComposeClick} />
           <SearchBox onSearch={this.onSearchInSideBarFirst} />
-          <ConversationsArchive conversations={this.props.conversations} />
+          <ConversationsArchive onClickItem={this.props.loadMessages} conversations={this.props.conversations} />
         </div>
         <div className='SideBar__second'>
           <OverlapHeading onBackClick={this.handleBackClick} />
@@ -52,10 +56,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => bindActionCreators({
-  loadConversations,
-  createConversation,
-  removeConversation,
-  removeAllConversations
+  loadMessages
 }, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(SideBar)
