@@ -44,7 +44,7 @@ class SideBar extends Component {
         <div className='SideBar__second'>
           <OverlapHeading onBackClick={this.handleBackClick} />
           <SearchBox onSearch={this.onSearchInSideBarSecond} />
-          <ConversationsArchive conversations={this.props.conversations} />
+          <ConversationsArchive onClickItem={this.props.loadMessages} conversations={this.props.conversations} />
         </div>
       </div>
     )
